@@ -12,7 +12,9 @@ Li and Liu [5] used Long Short-Term Memory and their own Deep Neural Network to 
 
 ## Methods
 Using the Higher Education Students Performance Evaluation Dataset [10], the data was split into 75% training and 25% testing. Then feature selection was performed using a Decision Tree.
-### Image here
+
+![Feature Importances Graph](feature_importances.png)
+
 The features with 0% importance (midtermExamPrepWhen, hasPartner, transportationToUniversity, graduatedHighSchoolType, sex) were dropped from the training and test sets.
 
 Three machine learning techniques were used: K-Nearest Neighbors, Random Forest, and a Neural Network. All three models were optimized to score the highest accuracy on the test set. The K-Nearest Neighbors model used 3 as the number of neighbors and the “Ball Tree” algorithm [8]. The Random Forest model used 300 trees in the forest [7]. The Neural Network’s hidden layer used three dense layers, all with RelU activation functions. The first layer in the hidden layer has 100 nodes, the second with 50 nodes, and the third with 100 nodes. The output layer uses a Softnax activation function. The Neural Network uses Sparse Categorical Cross Entropy as the loss function, Stochastic Gradient Descent as the optimizer, and 100 epochs [9].
