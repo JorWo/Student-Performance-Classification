@@ -20,6 +20,12 @@ Three machine learning techniques were used: K-Nearest Neighbors, Random Forest,
 ## Results
 Based on the performances of the three machine learning techniques used on the test set, K-Nearest Neighbors performed the best with an accuracy of 38%. Next is Random Forest with an accuracy of 32% and last is the Neural Network with an accuracy of 22%.
 
+| ML Model          | Test Accuracy     |
+| ----------------- | ----------------- |
+| KNN               | 37.84%            |
+| Random Forest     | 32.43%            |
+| Neural Network    | 21.62%            |
+
 ## Discussion
 The overall performance of K-Nearest Neighbors, Random Forest, and a Neural Network suggest the models are overfitting the data, which can be alleviated with more data to train on. The simplest machine learning model, K-Nearest Neighbors performed the best. The results may also suggest the data is very complex and requires deep learning models to achieve a high test accuracy. With a much more optimized Neural Network, it may have been possible to get good accuracy. Despite these shortcomings, there is still a lot to take away from this dataset when performing feature selection. The feature selection using a Decision Tree described the least and most important factors of earning high grades as a student. The feature selection found that the following features have no impact on the grade they earned: when a student prepares for midterm exams (1: closest date to the exam, 2: regularly during the semester, 3: never), if they have a partner, how they transport to the university (1: bus, 2: private car/taxi, 3: bicycle, 4: other), the type of high school they graduated from (1: private, 2: state, 3: other), and their sex [10]. On the other hand, the course they were taking and their last semester’s cumulative grade-point average were the most important predictors of a student’s grade.
 
